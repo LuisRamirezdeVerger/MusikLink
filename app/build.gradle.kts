@@ -37,6 +37,18 @@ android {
 
 dependencies {
 
+    // Dependencias de Firebase
+    implementation(libs.firebase.bom) // Versión de Firebase BOM
+    implementation(libs.firebase.auth.ktx)
+    implementation(libs.firebase.firestore.ktx)
+    implementation(libs.firebase.storage.ktx)
+
+// Dependencia de Kotlin Serialization para manejar JSON
+    implementation(libs.kotlinx.serialization.json)
+
+// Dependencias de Coroutines para manejo de asincronía
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
